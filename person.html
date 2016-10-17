@@ -1,0 +1,107 @@
+
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/person.css" />
+	
+
+		<div id="box">
+			<div id="ttop">
+				<div class="left"><a href="#/"><img src="img/left.png"/></a></div>
+				<div class="center"><p>个人中心&nbsp;<img src="img/center.png"/></p></div>
+				<div class="right">
+					<a class="p2" href="#/">首页&nbsp;</a>
+					<a class="right1 iconfont" href="javascript:;">&#xe66b;</a>
+				</div>
+			</div>
+			
+			
+			<div id="nav">
+				<div class="top">
+					<div class="left">
+						<img src="img/userPhoto.png" /> 
+					</div>
+					<div class="right">
+						<p class="p1">jxw17028374</p>
+					</div>
+				</div>
+				
+				<div class="bottom">
+					<div class="right">
+						<div class="div1">
+							
+							<p class="p2">
+								<i class="iconfont">&#xe64c;</i>
+								<span>我的订单</span>							
+							</p>
+						</div>
+						<div class="div2"> 					
+							<p class="p2">	
+								<i class="iconfont">&#xe66b;</i>
+								<span>我的收藏</span>
+							</p>
+						</div>
+						<div class="div3">						
+							<p class="p2">
+								<i class="iconfont">&#xe601;</i>
+								<span>购物车</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>		
+			
+			
+			<div class="city-list">
+					<ul>
+						<li ng-repeat="keys in address"><a href="#">{{keys.word}}<i class="iconfont">&#xe603;</i></a></li>
+					</ul>
+			</div>
+			<div class="city-list1">
+					<ul>
+						<li ng-repeat="keys1 in address1"><a href="#">{{keys1.word}}<i class="iconfont">&#xe603;</i></a></li>
+					</ul>
+			</div>
+			<div id="retu">
+				<input type="button" value="退出"/>
+			</div>
+			<div class="phone">
+					<i class="sign iconfont">&#xe67d;</i>
+					400-01-13520
+				</div>
+				<div class="kefu">
+					<i class="kef iconfont">&#xe649;</i>
+					&nbsp;在线客服
+				</div>
+			<div class="footer">
+				<div class="he">
+					<a class="jingl1" href="#"></a>
+					<a class="jingl2" href="#"></a>
+					<a class="jingl3" href="#"></a>
+					<a class="jingl4" href="#"></a>
+					<a class="jingl5" href="#"></a>
+					<a class="jingl6" href="#"></a>
+				</div>
+				<p class="p4">Copyright © 2006-2016 戴瑞珠宝 粤ICP备11012085号-2</p>
+			</div>
+			<div class="service">
+				<img src="img/service.gif"/> 
+			</div>
+			<div class="top iconfont">&#xe64e;</div>
+		</div>
+		<script>
+			$(window).scroll(function(){
+				if($(this).scrollTop()>=300){
+					//console.log(222+":"+$(this).scrollTop())
+					$(".top").show()
+				}else{
+					//console.log(333+":"+$(this).scrollTop())
+					$(".top").hide()
+				}
+			})
+			$(".top").click(function(){
+				$("thml,body").animate({
+					"scrollTop":0
+				})
+			})
+		</script>
+

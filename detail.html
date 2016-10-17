@@ -1,0 +1,152 @@
+	<link rel="stylesheet" href="css/iconfont.css" />
+	<link rel="stylesheet" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/detail.css"/>
+
+<div id="box">
+	<div class="header">
+		<a class="left iconfont" href="javascript:history.go(-1);">&#xe64c;</a>
+		<p class="p1">DarryRing</p>
+		<a class="p2" href="#/">首页</a>
+		<a class="right iconfont" href="#">&#xe66b;</a>
+	</div>	
+	<div class="con">
+		<div class="topo" style="display: block;">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+			    	<div class="swiper-slide"  ng-repeat="goods in dat">
+			    		<a href="#" >
+			    			<img class="pic" src="{{goods}}"/>
+			    		</a>
+			    	</div>
+			   </div>
+			</div>
+			<h2 class="name">{{mes.name}}</h2>
+			<p class="del">{{mes.del}}</p>
+			<p class="price">￥{{mes.price}}</p>
+		</div>
+		<div class="xuan">
+			<dl>
+				<dt>戒指材质</dt>
+				<dd>
+					<ul>
+						<li class="cai">PT950</li>
+						<li class="cai">PT950</li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>搭配主钻</dt>
+				<dd>
+					<ul>
+						<li class="cai">30分F色</li>
+						<li class="cai">40分E色</li>
+						<li class="cai">40分F色</li>
+						<li class="cai">50分G色</li>
+						<li class="cai">50分G色</li>
+						<li class="cai">50分J色</li>
+						<li class="cai">100分F色</li>
+						<li class="cai">100分J色</li>
+						<li class="cai gao">高级定制</li>						
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>选择手寸</dt>
+				<dd>
+					<select>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>						
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+					</select>
+				</dd>
+			</dl>
+			<dl>
+				<dt>免费刻字</dt>
+				<dd><input class="inp" type="text" placeholder="限5个中文字"/></dd>
+			</dl>
+		</div>
+		<p class="song">中国大陆地区付款后15个工作日内到达，其它地区请咨询客服。</p>
+		<div class="service onbtn">
+			<p class="ser">售后服务</p>
+			<img class="ser1" src="img/serve_xl.jpg"/>
+		</div>
+		<div class="can onbtn">
+			<p class="can1 ser">商品参数</p>
+			<div class="product">
+				<ul class="left">
+					<li>商品分类：<a href="#">求婚钻戒</a></li>
+					<li>系列名称：<a href="#">FOREVER 系列</a></li>
+					<li>主石大小：<a href="#">30分</a></li>
+					<li>主石材料<a href="#">钻戒</a></li>
+					<li>主石数量：<a href="#">1</a></li>
+					<li>主石总重：<a href="#">30分</a></li>
+					<li>净度：<a href="#">VS2</a></li>
+					<li>颜色：<a href="#">F</a></li>
+					<li>切工：<a href="#">VG</a></li>
+				</ul>
+				<ul class="right">
+					<li>产品编号：<a href="#">A02001</a></li>
+					<li>工艺：<a href="#"></a></li>
+					<li>戒托材质：<a href="#">白18K金</a></li>
+					<li>副石材质：<a href="#"></a></li>
+					<li>副石数量：<a href="#">0</a></li>
+					<li>副石总重：<a href="#">0分</a></li>
+					<li>手寸：<a href="#">客订,手寸可改</a></li>
+					<li>参考手寸：<a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="tab">
+			<div class="tit">
+				<a href="javascript:;">商品详情</a>
+				<a class="til1" href="javascript:;">累计评价</a>
+			</div>				
+			<div class="main1" ng-repeat="msg in data1"><img  src="{{msg}}"/></div>
+			<div class="main2">暂无评论</div>
+		</div>		
+		</div>
+		<div class="footer">
+			<a href="#/buycar" class="buy foot">立即购买</a>
+			<a href="javascript:;" class="jia foot" ng-click="gwc()">加入购物车</a>
+			<a href="#/buycar" class="cart"></a>
+		</div>
+	</div>
+	
+</div>
+<script>
+	var mySwiper = new Swiper ('.swiper-container', {
+	  	autoplay : 2000,
+		autoplayDisableOnInteraction: false,
+		loop:true
+	})
+	var seroff = true;
+	var canoff = true;
+		
+	$(".onbtn").on("click","p",function(){
+		$(this).next().toggle()
+	})
+		
+		
+	$(".jia").click(function(){
+		$('body').append($(".pic").eq(0).clone().css({'position':'fixed','width':'150px','height':'150px','opacity':'1',"border-radius":"50%","top":"30%","left":"50%","z-index":"200"}).animate({"top":"100%",'left':'100%','width':'2px','height':'2px','opacity':'0'},1000));
+	})
+		
+	$(".cai").click(function(){
+		$(this).addClass("cai1").siblings().removeClass("cai1")
+	})
+</script>

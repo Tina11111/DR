@@ -1,0 +1,117 @@
+
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+	<body ng-controller="pinkfour">
+		<div id="box" >
+			<div class="header" ng-controller="pinkone">
+				<a class="back l iconfont" href="#/">&#xe64c;</a>
+				<span>With You 稀世粉钻</span>
+				<div class="right r">
+					<a class="index l" href="#/">首页</a>
+					<span class="r">
+						<a class="home r" href="javascript:;" ng-click='showname()'><i class="iconfont">&#xe66b;</i></a>
+					</span>
+				</div>
+			</div>
+			
+			<div class="list" ng-controller="pinktwo">
+				<div class="hide"></div>
+				<a class="r" href="" ng-click='hidename()'>x</a>
+				<div class="side">
+					<div class="func width_show">
+						<ul style="border-top: 2px solid #282828;">
+							<li style="border-bottom: 1px solid #a6a6a6; color: #ca8565;">购物车</li>
+							<li style="color: #CA8565;">个人中心</li>
+						</ul>
+						<ul style="border-top: 2px solid #a6a6a6;">
+							<li style="border-bottom: 1px solid #a6a6a6;">求婚钻戒</li>
+							<li style="border-bottom: 1px solid #a6a6a6;">爱的礼物</li>
+							<li>DR实体店</li>
+						</ul>
+						<ul style="border-top: 2px solid #a6a6a6;">
+							<li style="border-bottom: 1px solid #a6a6a6;">在线客服</li>
+							<li>帮助中心</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="nav" ng-controller="pinkthree">
+				<a ng-click="change('0')" href="javascript:;" style="border-bottom: 1px solid #c7063d; color: #c7063d;">爱是唯一</a>
+				<a ng-click="change('1')" href="javascript:;">相守</a>
+				<a ng-click="change('2')" href="javascript:;">相伴</a>
+				<a ng-click="change('3')" href="javascript:;">爱是生命</a>
+			</div>
+			
+			<div class="bottom">
+				<div class="pic">
+					<img src="img/01.jpg" />
+					<img src="img/02.jpg"/>
+					<img src="img/03.jpg" />
+				</div>
+				
+				<div class="contact">
+					<p class="tel"><i class="iconfont">&#xe67d;</i>400-01-13520</p>
+					<p class="kefu"><i class="iconfont">&#xe649;</i>在线客服</p>
+				</div>
+				
+				<div class="footer">
+					<div class="last">
+						<a class="one" href="#"></a>
+						<a class="two" href="#"></a>
+						<a class="three" href="#"></a>
+						<a class="four" href="#"></a>
+						<a class="five" href="#"></a>
+						<a class="six" href="#"></a>
+					</div>
+					<p>copyright © 2006-2016 戴瑞珠宝 粤ICP备11012085号-2</p>
+				</div>
+				
+				<div class="right_side">
+					<img src="img/service.gif"/>
+				</div>
+				
+				<div style="display: none;" class="top">
+					<i class="iconfont">&#xe64e;</i>
+				</div>
+				
+			</div>
+		</div>
+		<script>
+			$(window).scroll(function(){
+				if($(this).scrollTop()>=300){
+					//console.log(222+":"+$(this).scrollTop())
+					$(".top").show()
+				}else{
+					//console.log(333+":"+$(this).scrollTop())
+					$(".top").hide()
+				}
+			})
+			$(".top").click(function(){
+				$("thml,body").animate({
+					"scrollTop":0
+				})
+			})
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

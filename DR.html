@@ -1,0 +1,70 @@
+
+	<link rel="stylesheet" href="css/drtruegoods.css">
+	<link rel="stylesheet" href="css/demo.css" />
+	<link rel="stylesheet" href="css/iconfont.css" />
+	<div id="alllist">		
+		<header id="st-header">
+			<a href="#/" class="iconfont">&#xe64c;</a>
+			<h3>DR实体店</h3>
+			<a class="p2" href="#/">首页</a>
+			<a class="right iconfont mbtn" href="javascript:;">&#xe66b;</a>
+		</header>
+		<section id="st-content">
+			<section class="con-banner">
+				<ul>
+					<li><a href="#/"><img src="img/banner-1.jpg"></a></li>
+					<li><a href="#/"><img src="img/banner-2.jpg"></a></li>
+					<li><a href="#/"><img src="img/banner-3.jpg"></a></li>
+					<li><a href="#/"><img src="img/banner-4.jpg"></a></li>
+					<li><a href="#/"><img src="img/banner-5.jpg"></a></li>
+				</ul>
+			</section>
+			<section class="jump-next">
+				<a href="">附近城市的店铺<i class="iconfont">&#xe603;</i></a>
+			</section>
+			<section class="city-list" >
+				<ul ng-controller="Drtrue">
+					<li ng-repeat="keys in address"><a href="#">{{keys.word}}<i class="iconfont">></i></a></li>
+				</ul>
+			</section>
+		</section>
+		<div class="phone">
+			<i class="sign iconfont">&#xe67d;</i>
+			400-01-13520
+		</div>
+		<div class="kefu">
+			<i class="kef iconfont">&#xe649;</i>
+			&nbsp;在线客服
+		</div>
+		<div class="footer">
+			<div class="he">
+				<a class="jingl1" href="#"></a>
+				<a class="jingl2" href="#"></a>
+				<a class="jingl3" href="#"></a>
+				<a class="jingl4" href="#"></a>
+				<a class="jingl5" href="#"></a>
+				<a class="jingl6" href="#"></a>
+			</div>
+			<p class="p4">Copyright © 2006-2016 戴瑞珠宝 粤ICP备11012085号-2</p>
+		</div>
+		<div class="service">
+			<img src="img/service.gif" /> 
+		</div>
+		<div class="top iconfont">&#xe64e;</div>
+	</div>	
+	<script>
+		$(window).scroll(function(){
+			if($(this).scrollTop()>=300){
+				//console.log(222+":"+$(this).scrollTop())
+				$(".top").show()
+			}else{
+				//console.log(333+":"+$(this).scrollTop())
+				$(".top").hide()
+			}
+		})
+		$(".top").click(function(){
+			$("thml,body").animate({
+				"scrollTop":0
+			})
+		})
+	</script>

@@ -1,0 +1,277 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,li,dl,ol,dt,dd,form,input,img,table,tr,td{padding: 0;margin: 0;}
+	ul,ol{list-style: none;}
+	img{display: block; border: 0;}
+	input,button{outline: none;}
+	i{font-style: normal;}
+	body{font-family: "microsoft yahei",arial;font-size: 12px;}
+	a{text-decoration: none; color: #333;}
+	a:hover{text-decoration:none; color: #909090;}
+	input{outline: none;}
+	
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+
+#box{
+	width:100%;
+	height:100%;
+}
+#box .header{
+	width:100%;
+	height:2.2rem;
+	border-bottom:1px solid #EFF0EE;
+	box-shadow:0 3px 5px #909090;
+	position:fixed;
+	top:0;
+	z-index: 1000;
+	background:#fff;
+}
+#box .header .left{
+	display:block;
+	width:12%;
+	height:2.2rem;
+	float:left;
+	color:#ca8565;
+	font-size:22px;
+	padding-left:10px;
+	padding-top:6px;
+	box-sizing: border-box;
+}
+#box .header .p1{
+	width:60%;
+	line-height:2.2rem;
+	font-size: 16px;
+    color: #ca8565;
+    text-align: center;
+	float:left;
+	margin-left:10px;
+	font-weight:bold;
+}
+#box .header .p2{
+	display:block;
+	width:12%;
+	line-height:2.2rem;
+	font-size: 14px;
+	float:left;
+	margin-top:2px;
+	box-sizing: border-box;
+}
+#box .header .right{
+	display:inline-block;
+	width:12%;
+	height:2.2rem;
+	float:right;
+	padding-top:8px;
+	font-size:22px;
+ 	color: #434343;
+ 	box-sizing: border-box;
+}
+.con{
+	overflow:hidden;
+}
+.con .topo{
+	height:21rem;
+	background:#fff;
+}
+.con .topo .swiper-container{
+	height:16rem;
+}
+.con .topo .swiper-container .swiper-slide img{
+	width:100%;
+	height:100%;
+}
+.con h2.name{
+	height:1.6rem;
+	line-height:1.6rem;
+	text-align:center;
+}	
+.con .del{
+	font-size:12px;
+	text-align:center;
+	line-height:;
+	color:#999;
+}
+.con .price{
+	font-size:16px;
+	color:#a15231;
+	font-weight:bold;
+	text-align:center;
+}
+.con .xuan{
+	background:#eff0ee;
+	border-bottom:1px solid #e7e8e6;
+	overflow: hidden;
+}
+.con .xuan dl{
+	overflow:hidden;
+	margin:20px 0;
+}
+.con .xuan dt{
+	width:25%;
+	text-align:center;
+	float:left;
+	font-size:12px;
+	color:#838383;
+}
+.con .xuan dd{
+	float:left;
+	width:75%;	
+}
+.con .xuan dd ul{
+	width:100%;
+}
+.con dd .cai{
+	width:30%;
+	float:left;
+	border:1px solid #aeaeae;
+	margin-right:2%;
+	text-align:center;
+	margin-bottom:10px;
+}
+.con dd .cai1{
+	border:1px solid #c57d5d;
+	background:url(../img/dagou.jpg) no-repeat bottom right;
+}
+select{
+	width:50%;
+	outline:none;
+}
+select option{
+	line-height:15px;
+}
+.inp{
+	width:40%;
+	color:#ccc;
+	padding-left:10px;
+}
+.song{
+	line-height:24px;
+	font-size:12px;
+	background:#d8dad6;
+	padding:10px 10px;
+}
+.service{
+	overflow:hidden;
+}
+.ser{
+	height:1.5rem;
+	line-height:1.5rem;
+	color:#fff;
+	text-align:center;
+	background:#797979 url(../img/whrite_bottom.png) no-repeat 65% center;
+	background-size:auto 20%;
+}
+.service img.ser1{
+	display:block;
+	width:100%;
+	display:none;
+}
+.can{
+	overflow:hidden;
+}
+.can1{
+	background:#ccc url(../img/whrite_bottom.png) no-repeat 65% center;;
+	color:#333;
+	background-size:auto 20%;
+}
+.product{
+	width:100%;
+	height:13rem;
+	background:#eee;
+	padding:10px 20px;
+	display:none;
+}
+.product .left{
+	width:50%;
+	float:left;
+	margin-top:5%;
+}
+.product .left li{
+	font-size:12px;
+	color:#666;
+	line-height:1.2rem;
+}
+.product .left li a{
+	display:inline-block;
+	color:#999;
+	font-size:12px;
+	margin-left:3%;	
+}
+.product .right{
+	width:50%;
+	float:left;
+	margin-top:5%;
+}
+.product .right li{
+	font-size:12px;
+	color:#666;
+	line-height:1.2rem;
+}
+.product .right li a{
+	display:inline-block;
+	color:#999;
+	font-size:12px;
+	margin-left:3%;
+}
+.tab{
+	overflow:hidden;
+}
+.tit{
+	border:1px solid #434343;
+	border-left:0;
+	border-right:0;
+	height:1.8rem;
+	line-height:1.8rem;
+	display:-webkit-box;
+}
+.tit a{
+	-webkit-box-flex:1;
+	display:block;
+	text-align:center;
+	border-right:1px solid #999;
+	height:1rem;	
+	line-height:1rem;
+	color:#444;
+	margin-top:0.5rem;
+}
+a.til1{
+	border-right:0;
+}
+.main1{
+	width:100%;
+}
+.main1 img{
+	width:100%;
+	height:100%;
+}
+.footer{
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:100;
+	height:1.8rem;
+	font-size:16px;
+	display:-webkit-box;
+	width:100%;
+}
+.footer .foot{
+	display:block;
+	-webkit-box-flex:2;
+	line-height:1.8rem;
+	text-align:center;
+	color:#fff;
+}
+.footer .buy{	
+	background:#c57d5c;		
+}
+.footer .jia{
+	background:#AEAEAE;
+}
+.footer .cart{
+	display:block;
+	-webkit-box-flex:1;
+	line-height:1.8rem;
+	background:#eee url(../img/shopcart.png) no-repeat center center;
+	background-size:65% 65%;
+}

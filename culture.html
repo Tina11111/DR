@@ -1,0 +1,97 @@
+		<link rel="stylesheet" href="css/culture.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+		<div id="box">
+			<div class="mlist">
+				<div class="close">
+					<a href="javascript:;" class="iconfont">&#xe60c;</a>
+				</div>
+				<ul>
+					<li><a href="#">求婚钻戒</a></li>
+					<li><a href="#">结婚对戒</a></li>
+					<li><a href="#">爱的礼物</a></li>
+					<li><a href="#">DR实体店</a></li>
+					<li><a href="#">DR文化</a></li>
+					<li><a href="#">DR明星</a></li>
+					<li><a href="#">购物车</a></li>
+					<li><a href="#">个人中心</a></li>
+					<li><a href="#">在线客服</a></li>
+					<li><a href="#">帮助中心</a></li>
+				</ul>
+			</div>
+			<div class="header">
+				<a class="left iconfont" href="#/">&#xe64c;</a>
+				<p class="p1">品牌文化</p>
+				<a class="p2" href="#/">首页</a>
+				<a class="right iconfont mbtn" href="javascript:;">&#xe66b;</a>
+			</div>
+			<div class="content">
+				<img src="img/cultureadv1.jpg"/>
+				<div class="con">
+					<p>早于上个世纪90年代，戴瑞珠宝便在香港开始从事裸钻高级定制,以寻求、欣赏珍宝的眼光，苛刻的甄选标准，搜集来自世界各地的珍稀钻石。 </p>
+					<p>卓越品质的钻石戴瑞珠宝只提供给少数专属的顶尖珠宝商,让钻石在不同珠宝艺术大师演绎绝美工艺创作。</p>
+					<p>在Darry Ring，这里有着世间最独特的规定，每位男士凭身份证一生仅能定制一枚唯一的戒指，赠予此生唯一挚爱的女子，以示“一生只爱你一人”的至高承诺。</p>
+					<p>此生真爱 仅此一枚……</p>
+				</div>
+				<div class="pic">
+					<a href="#"><img src="img/gongyi4.jpg" /> </a>
+					<p class="p3">品质工艺</p>
+				</div>
+				<div class="pic">
+					<a href="#"><img src="img/cultureadv2.jpg"/> </a>
+					<p class="p3">签署真爱协议-见证浪漫DR族</p>
+				</div>
+				<div class="pic">
+					<a href="#"><img src="img/cultureadv3.jpg"/> </a>
+					<p class="p3">专属空间</p>
+				</div>
+				<div class="images">
+					<a class="le" href="#"><img src="img/1471835899.jpg" /> </a>
+					<a class="rig" href="#"><img src="img/gongyi4.jpg" /> </a>
+				</div>
+				<div class="phone">
+					<i class="sign iconfont">&#xe67d;</i>
+					400-01-13520
+				</div>
+				<div class="kefu">
+					<i class="kef iconfont">&#xe649;</i>
+					&nbsp;在线客服
+				</div>
+			</div>
+			<div class="footer">
+				<div class="he">
+					<a class="jingl1" href="#"></a>
+					<a class="jingl2" href="#"></a>
+					<a class="jingl3" href="#"></a>
+					<a class="jingl4" href="#"></a>
+					<a class="jingl5" href="#"></a>
+					<a class="jingl6" href="#"></a>
+				</div>
+				<p class="p4">Copyright © 2006-2016 戴瑞珠宝 粤ICP备11012085号-2</p>
+			</div>
+			<div class="service">
+				<img src="img/service.gif" /> 
+			</div>			<div class="top iconfont">&#xe64e;</div>
+		</div>
+		<script>
+			$(".mbtn").on("click",function(){
+				$(".mlist").addClass("anima")
+			})
+			$(".close").on("click",function(){
+				$(".mlist").removeClass("anima")
+			})
+			$(window).scroll(function(){
+				if($(this).scrollTop()>=300){
+					//console.log(222+":"+$(this).scrollTop())
+					$(".top").show()
+				}else{
+					//console.log(333+":"+$(this).scrollTop())
+					$(".top").hide()
+				}
+			})
+			$(".top").click(function(){
+				$("thml,body").animate({
+					"scrollTop":0
+				})
+			})
+		</script>

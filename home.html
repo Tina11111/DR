@@ -1,0 +1,143 @@
+<link rel="stylesheet" href="css/demo.css" />
+<link rel="stylesheet" href="css/iconfont.css" />
+<div id="home"  ng-controller="home">
+	<div class="mlist">
+		<div class="close">
+			<a href="javascript:;" class="iconfont">&#xe60c;</a>
+		</div>
+		<ul>
+			<li><a href="#">求婚钻戒</a></li>
+			<li><a href="#">结婚对戒</a></li>
+			<li><a href="#">爱的礼物</a></li>
+			<li><a href="#">DR实体店</a></li>
+			<li><a href="#">DR文化</a></li>
+			<li><a href="#">DR明星</a></li>
+			<li><a href="#">购物车</a></li>
+			<li><a href="#">个人中心</a></li>
+			<li><a href="#">在线客服</a></li>
+			<li><a href="#">帮助中心</a></li>
+		</ul>
+	</div>
+	<div class="header">
+		<a class="iconfont l mbtn" href="javascript:;">&#xe600;</a>
+		<div class="r">
+			<a href="#/person" class="iconfont l">&#xe602;</a>
+			<a href="#/buycar" class="iconfont l">&#xe603;</a>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+		    	<div class="swiper-slide" ng-repeat="item in data" ><a href="#/goods/{{item.id}}"><img src="{{item.img}}"/></a></div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<div class="nav">
+		<ul>
+			<li class="l" ng-repeat="arr in nav"><a href="#/list/{{arr.id}}"><img src="{{arr.img}}"/><p>{{arr.name}}</p></a></li>
+		</ul>
+	</div>
+	<div class="border"></div>
+	<div class="DR">
+		<p>DR专属查询</p>
+	</div>
+	<div class="shiti">
+		<div class="shiti_lun">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+			    	<div class="swiper-slide" ng-repeat="item in shitidata" >
+			    		<a href="#">
+			    			<img src="{{item.img}}"/>
+			    			<div class="shitidian">
+			    				<p class="l">{{item.dian}}</p>
+			    				<p class="l">预约进店</p>
+			    			</div>
+			    		</a>
+			    	</div>
+			   </div>
+			</div>
+		</div>
+		<ul>
+			<li class="l"><a href="#"><span>全国实体店详情</span></a></li>
+			<li class="l"><a href="#"><span>预约进店</span></a></li>
+		</ul>
+	</div>
+	<div class="list_data">
+		<ul>
+			<li ng-repeat="list in listdata"><a href="#/picture/{{list.id}}"><img src="{{list.img}}"/></a></li>
+		</ul>
+	</div>
+	<div class="kefu">
+		<p><i class="iconfont">&#xe605;</i><span>400-01-13520</span></p>
+		<p><i class="iconfont">&#xe607;</i><span>在线客服</span></p>
+	</div>
+	<div class="yuyue">
+		<i class="iconfont">&#xe606;</i>
+		<span>DR实体店预约></span>		
+		<span>在线预约店铺</span>
+	</div>
+	<div class="footer">
+		<img src="img/shou.jpg" />
+		<ul>
+			<li class="l"><a href="#">注册</a></li>
+			<li  class="l"><a href="#">登录</a></li>
+			<li  class="l"><a href="#"><img src="img/tel.png"/></a></li>
+			<li  class="l"><a href="#">DR咨询</a></li>
+			<li  class="l"><a href="#">电脑版</a></li>
+		</ul>
+		<div class="he">
+			<a class="jingl1" href="#"></a>
+			<a class="jingl2" href="#"></a>
+			<a class="jingl3" href="#"></a>
+			<a class="jingl4" href="#"></a>
+			<a class="jingl5" href="#"></a>
+			<a class="jingl6" href="#"></a>
+		</div>
+		<span>Copyright ? 2006-2016 戴瑞珠宝 粤ICP备11012085号-2</span>
+	</div>
+	<div class="service">
+		<img src="img/service.gif" /> 
+	</div>
+	<div class="top iconfont">&#xe64e;</div>
+</div>
+<script>
+	$(function(){
+		$(".mbtn").on("click",function(){
+			$(".mlist").addClass("anima")
+		})
+		$(".close").on("click",function(){
+			$(".mlist").removeClass("anima")
+		})
+		swiper()
+		function swiper(){
+			var mySwiper = new Swiper ('.banner .swiper-container', {
+				autoplay : 2000,
+				autoplayDisableOnInteraction: false,
+				pagination: '.swiper-pagination',
+				paginationClickable :true
+			})
+		}
+		swiper2()
+		function swiper2(){
+			var mmSwiper = new Swiper ('.shiti .swiper-container', {
+				autoplay : 2000,
+				autoplayDisableOnInteraction: false
+			})
+		}
+	})
+	$(window).scroll(function(){
+		if($(this).scrollTop()>=300){
+			//console.log(222+":"+$(this).scrollTop())
+			$(".top").show()
+		}else{
+			//console.log(333+":"+$(this).scrollTop())
+			$(".top").hide()
+		}
+	})
+	$(".top").click(function(){
+		$("thml,body").animate({
+			"scrollTop":0
+		})
+	})
+</script>

@@ -1,0 +1,106 @@
+		<link rel="stylesheet" type="text/css" href="css/dr-list.css"/>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/demo.css" />
+		<div id="box" ng-controller="AAA">
+			<div class="header">
+				<div class="left">
+					<a href="#/"><img src="img/back.jpg" /></a>
+				</div>
+				<div class="center" ng-bind="titlee"></div>
+				<div class="right">
+					<a href="#/"><div class="index" ng-bind="index"></div></a>
+					<div class="xuanzhuan">
+						<img src="img/xuanzhuan.jpg"/>
+					</div>
+				</div>
+			</div>
+			<div class="banner"><img src="img/1468907712.jpg"/></div>
+			<div class="look">
+				<a>查看全部</a>
+			</div>
+			<div class="list1">
+				<a href="#/list/1"><img ng-repeat="data in urll" src="{{data.srcc}}"/></a>
+				<div class="banner2">
+					<img src="img/1470214384.jpg"/>
+				</div>
+				<a href="#/list/1"><img ng-repeat="data in urll2" src="{{data.srcc}}"/></a>
+			</div>
+			<div class="dianji" ng-click="show()" ng-show="myvar">点击展示更多...</div>
+			<div class="list2" ng-hide="myvar">
+				<div class="banner2">
+					<img src="img/li1.jpg"/>
+				</div>
+				<a href="#/list/1"><img ng-repeat="data in urll3" src="{{data.srcc}}"/></a>
+				
+			</div>
+			<div class="phone">
+					<i class="sign iconfont">&#xe67d;</i>
+					400-01-13520
+				</div>
+				<div class="kefu">
+					<i class="kef iconfont">&#xe649;</i>
+					&nbsp;在线客服
+				</div>
+			<div class="footer">
+				<div class="he">
+					<a class="jingl1" href="#"></a>
+					<a class="jingl2" href="#"></a>
+					<a class="jingl3" href="#"></a>
+					<a class="jingl4" href="#"></a>
+					<a class="jingl5" href="#"></a>
+					<a class="jingl6" href="#"></a>
+				</div>
+				<p class="p4">Copyright © 2006-2016 戴瑞珠宝 粤ICP备11012085号-2</p>
+			</div>
+			<div class="service">
+				<img src="img/service.gif" /> 
+			</div>
+			<div class="top iconfont">&#xe64e;</div>
+		</div>	
+		<script>
+			var app=angular.module("myapp",[])
+			var urll=[
+			{"id":0,"srcc":"img/1.jpg"},
+			{"id":1,"srcc":"img/2.jpg"},
+			{"id":2,"srcc":"img/3.jpg"},
+			{"id":3,"srcc":"img/4.jpg"}
+			]
+			var urll2=[
+			{"id":4,"srcc":"img/5.jpg"},
+			{"id":5,"srcc":"img/6.jpg"},
+			{"id":6,"srcc":"img/7.jpg"},
+			{"id":7,"srcc":"img/8.jpg"}
+			]
+			var urll3=[
+			{"id":8,"srcc":"img/li2.jpg"},
+			{"id":9,"srcc":"img/li3.jpg"},
+			{"id":10,"srcc":"img/li4.jpg"}
+			
+			]
+			app.controller("AAA",["$scope",function($scope){
+				$scope.titlee="求婚钻戒"
+				$scope.index="首页"
+				$scope.urll=urll
+				$scope.urll2=urll2
+				$scope.urll3=urll3
+				$scope.myvar=true
+				$scope.show=function(){
+					$scope.myvar=false
+				}
+			}])
+			$(window).scroll(function(){
+				if($(this).scrollTop()>=300){
+					//console.log(222+":"+$(this).scrollTop())
+					$(".top").show()
+				}else{
+					//console.log(333+":"+$(this).scrollTop())
+					$(".top").hide()
+				}
+			})
+			$(".top").click(function(){
+				$("thml,body").animate({
+					"scrollTop":0
+				})
+			})
+		</script>
+

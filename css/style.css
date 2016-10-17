@@ -1,0 +1,250 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;}
+a{color:#172c45;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:none} 
+li{list-style:none}
+img{border:0;vertical-align:middle} 
+.l{ float: left;}
+.r{ float: right;}
+
+html,body,#box{
+	width: 100%;
+	height: 100%;
+}
+
+#box{
+	position: relative;
+}
+
+#box .header{
+	width: 100%;
+	height: 44px;
+	background: #fff;
+	border-bottom: 1px solid #c4c5c3;
+	line-height: 44px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	text-align: center;
+}
+#box .header .back{
+	display: inline-block;
+	font-size: 22px;
+	color: #ca8565;
+	padding: 0 15px;
+}
+#box .header span{
+	font-size: 16px;
+	color: #CA8565;
+}
+
+#box .header .right .index{
+	font-size: 14px;
+	padding: 0 6px;
+}
+#box .header .right .home{
+	padding: 0 15px;
+	color: #434343;
+	vertical-align: middle;
+	font-size: 20px;
+}
+
+.iconfont{
+	font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+#box .list{
+	 width: 100%;
+	 height: 100%;
+	 display: none;
+	 position: relative;
+	 overflow-y: auto;
+}
+#box .list .hide{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .4;
+	z-index: 11;
+}
+#box .list a.r{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 44px;
+	line-height: 44px;
+	background: #fff;
+	font-size: 24px;
+	z-index: 12;
+	padding: 0 25px;
+	color: #CA8565;
+}
+#box .list .side{
+	width: 100%;
+	position: absolute;
+	top: 44px;
+	left: 0;
+	z-index: 12;
+}
+#box .list .side .func{
+	width: 80%;
+	padding: 10px 10%;
+	background: #fff;
+}
+#box .list .side .func ul{
+	width: 100%;
+}
+#box .list .side .func ul li{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+@keyframes width_show{
+	0%{width: 0;}
+	100%{width: 80%;}
+}
+.width_show{
+	animation: width_show 2s linear both;
+}
+#box .nav{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: fixed;
+	top: 45px;
+	display: -webkit-box;
+	display: -moz-box;
+	z-index: 10;
+	background: #fff;
+}
+#box .nav a{
+	display: block;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	width: 25%;
+	font-size: 14px;
+	text-align: center;
+}
+
+#box .bottom{
+	width: 100%;
+	position: absolute;
+	top: 85px;
+}
+
+#box .pic{
+	width: 100%;
+	overflow-y: inherit;
+}
+#box .pic img{
+	width: 100%;
+}
+#box .contact{
+	 width: 100%;
+	 height: 82px;
+	 border-bottom: 1px solid #666;
+}
+#box .contact p{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 14px;
+	border-top: 1px solid #666;
+	text-align: center;
+}
+#box .contact i{
+	color: #CA8565;
+}
+ 
+
+#box .footer{
+	padding: 15px 0;
+	text-align: center;
+}
+#box .footer .last{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+#box .footer .last a{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin: 0 10px;
+}
+#box .footer .last .one{
+	background: url(../img/ico-share.png) 0 0 no-repeat;
+	background-size: auto 100%; 
+}
+#box .footer .last .two{
+	background: url(../img/ico-share.png) -29px 0 no-repeat;
+	background-size: auto 100%; 
+}
+#box .footer .last .three{
+	background: url(../img/ico-share.png) -59px 0 no-repeat;
+	background-size: auto 100%; 
+}
+#box .footer .last .four{
+	background: url(../img/ico-share.png) -85px 0 no-repeat;
+	background-size: auto 100%; 
+}
+#box .footer .last .five{
+	background: url(../img/ico-share.png) -109px 0 no-repeat;
+	background-size: auto 100%; 
+}
+#box .footer .last .six{
+	background: url(../img/ico-share.png) -138px 0 no-repeat;
+	background-size: auto 100%; 
+}
+
+#box .right_side{
+	position: fixed;
+	top: 60%;
+	right: 0;
+	width: 32px;
+	height: 100px;
+	
+}
+#box .right_side img{
+	width: 100%;
+	height: 100%;
+}
+
+#box .top{
+	width: 32px;
+	height: 32px;
+	background: #dca388;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: #fff;
+	text-align: center;
+	line-height: 32px;
+	font-size: 18px;
+	position: fixed;
+	top: 80%;
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

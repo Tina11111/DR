@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="css/1.css" />
+<link rel="stylesheet" href="css/demo.css" />
+<link rel="stylesheet" href="css/iconfont.css" />
+<div id="ttop">
+	<div class="left"><a href="#/"><img src="img/left.png"/></a></div>
+	<div class="center"><p>爱的礼物&nbsp;<img src="img/center.png"/></p></div>
+	<div class="right">
+		<a class="p2" href="#/">首页&nbsp;</a>
+		<a class="right1 iconfont" href="javascript:;">&#xe66b;</a>
+	</div>
+</div>
+<div id="content">
+	<ul class="top1">
+		<li class="one"  ng-click="qiehuan('txtdata111')">人气</li>
+		<li class="two" ng-click="qiehuan('txtdata11')">新品</li>
+		<li class="three" ng-click="qiehuan('txtdata1111')">价格</li>
+		<li class="shan">筛选</li>
+	</ul>
+	<ul class="box1">
+		<li ng-repeat="arr1 in listdata1">
+			<a href="#/details/{{arr1.id}}"><img class="img11" src="{{arr1.txtdata11}}"/></a>
+			<p class="p1">{{arr1.txtdata111}}</p>
+			<p class="p2">￥{{arr1.txtdata1111}}</p>
+		</li>
+	</ul>
+	
+	<ul class="box2" ng-show="myVar">
+		<li ng-repeat="arr2 in listdata2">
+			<a href="#/details/{{arr2.id}}"><img class="img11" src="{{arr2.txtdata11}}"/></a>
+			<p class="p1">{{arr2.txtdata111}}</p>
+			<p class="p2">￥{{arr2.txtdata1111}}</p>
+		</li>
+	</ul>
+	
+	<p class="p11" id="pp" ng-click="more()" ng-hide="myVar">点击加载更多...</p>
+	<div class="phone">
+		<i class="sign iconfont">&#xe67d;</i>
+		400-01-13520
+	</div>
+	<div class="kefu">
+		<i class="kef iconfont">&#xe649;</i>
+		&nbsp;在线客服
+	</div>
+	<div class="footer">
+		<div class="he">
+			<a class="jingl1" href="#"></a>
+			<a class="jingl2" href="#"></a>
+			<a class="jingl3" href="#"></a>
+			<a class="jingl4" href="#"></a>
+			<a class="jingl5" href="#"></a>
+			<a class="jingl6" href="#"></a>
+		</div>
+		<p class="p4">Copyright © 2006-2016 戴瑞珠宝 粤ICP备11012085号-2</p>
+	</div>
+	<div class="service">
+		<img src="img/service.gif"/> 
+	</div>
+	<div class="topp iconfont">&#xe64e;</div>
+</div>
+<script>
+	$(window).scroll(function(){
+		if($(this).scrollTop()>=300){
+			//console.log(222+":"+$(this).scrollTop())
+			$(".topp").show()
+		}else{
+			//console.log(333+":"+$(this).scrollTop())
+			$(".topp").hide()
+		}
+	})
+	$(".topp").click(function(){
+		$("thml,body").animate({
+			"scrollTop":0
+		})
+	})
+</script>
+

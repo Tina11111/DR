@@ -1,0 +1,64 @@
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/buy.css" /> 
+	<div id="box" ng-controller="detail">
+		<header class="header">
+			<a class="left iconfont" href="javascript:history.go(-1)">&#xe64c;</a>
+			<p class="p1">购物车</p>
+			<a class="p2" href="#/">首页</a>
+			<a class="right iconfont" href="#">&#xe66b;</a>
+		</header>
+		<section id="content">
+			<ul class="top-step">
+				<li>
+					<b class="line active"></b>
+					<b class="num active">1</b>
+					<p class="num-word active">1. 购物车</p>
+				</li>
+				<li>
+					<b class="line"></b>
+					<b class="num">2</b>
+					<p class="num-word">2. 填写订单信息签署真爱协议</p>
+				</li>
+				<li>
+					<b class="line"></b>
+					<b class="num">3</b>
+					<p class="num-word">3.付款完成购买</p>
+				</li>
+			</ul>			
+		</section>
+		<section class="img-empty">
+			<ul id="oul">
+				
+			</ul>
+		</section>
+		<section id="bottom">
+			<section class="left-w">
+				<p>总价：￥<span class="zongj">0</span>.00</p>
+				<p>已选择<span class="count">0</span>件商品&nbsp;&nbsp;&nbsp;&nbsp;免运费</p>
+			</section>
+			<a href="#" class="pay">立即结算</a>
+		</section>
+	</div>		
+	<!--<script>
+		function Fy($scope){
+			$scope.feijia={
+				price:50,
+				
+				
+			}
+			$scope.zongF=function(){
+				return $scope.feijia.price*$scope.feijia.num
+			}
+		$scope.$watch("feijia.price",function(newval,oldval){
+			console.log(newval);
+			console.log(oldval);
+			if(newval>100){
+				$scope.feijia.yunf=0
+			}else{
+				$scope.feijia.yunf=10
+			}
+		},true)
+		}
+		
+	</script>-->
